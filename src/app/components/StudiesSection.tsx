@@ -1,18 +1,7 @@
+import portfolioData from '@/data/portfolio.json'
+
 export default function StudiesSection() {
-  const studies = [
-    {
-      degree: "Master's in Computer Science",
-      institution: "Lorem University",
-      period: "2020 - 2022",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Specialized in software engineering and web development."
-    },
-    {
-      degree: "Bachelor's in Software Engineering",
-      institution: "Ipsum Institute of Technology",
-      period: "2016 - 2020",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Focus on algorithms, data structures, and programming fundamentals."
-    }
-  ]
+  const { studies } = portfolioData
 
   return (
     <section className="studies-section">

@@ -1,22 +1,7 @@
+import portfolioData from '@/data/portfolio.json'
+
 export default function TechnologiesSection() {
-  const technologies = [
-    {
-      category: "Frontend Frameworks",
-      techs: ["React.js", "Vue.js", "Angular.js"]
-    },
-    {
-      category: "Languages",
-      techs: ["TypeScript", "JavaScript", "Java"]
-    },
-    {
-      category: "Backend",
-      techs: ["Node.js", "Express.js"]
-    },
-    {
-      category: "Other",
-      techs: ["Spring Framework", "REST APIs", "Git"]
-    }
-  ]
+  const { technologies } = portfolioData
 
   return (
     <section className="technologies-section">
