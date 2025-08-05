@@ -5,7 +5,7 @@ export default function ResumeAndStudiesSection() {
 
   return (
     <section className="section">
-      <div className="w-1/2 px-32">
+      <div className="w-full lg:w-1/2 px-4 lg:px-32 mb-8 lg:mb-0">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           Présentation
         </h2>
@@ -15,7 +15,7 @@ export default function ResumeAndStudiesSection() {
           </p>
         ))}
       </div>
-      <div className="w-1/2 px-16">
+      <div className="w-full lg:w-1/2 px-4 lg:px-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
           Formation
         </h2>

@@ -28,9 +28,9 @@ export default function ProjectsSection() {
       <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
         Projets
       </h2>
-      <div className="flex flex-wrap gap-8 items-stretch justify-center">
+      <div className="flex flex-wrap gap-4 lg:gap-8 items-stretch justify-center px-2 lg:px-0">
         {projects.map((project, index) => (
-          <div key={index} className="bg-white rounded-lg w-2/5 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full min-h-[525px]">
+          <div key={index} className="bg-white rounded-lg w-full sm:w-2/5 lg:w-2/5 shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full min-h-[525px]">
             {/* Project Screenshot */}
             <div
               className="relative h-64 bg-gray-200 flex-shrink-0 cursor-pointer hover:opacity-90 transition-opacity"

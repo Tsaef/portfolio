@@ -37,7 +37,7 @@ body {
 }
 
 .section {
-  @apply py-8 flex flex-row gap-8;
+  @apply py-8 flex gap-8 flex-col lg:flex-row;
 }
 
 .experience-section {

@@ -8,7 +8,7 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Main Content */}
-      <main className="flex flex-col items-center justify-center gap-12">
+      <main className="flex flex-col items-center justify-center lg:gap-12 gap-0 lg:divide-y-0 divide-y divide-gray-200">
         <HeroSection />
         <ResumeAndStudiesSection />
         <TechnologiesAndExperienceSection />
