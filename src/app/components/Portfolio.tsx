@@ -1,8 +1,8 @@
 import HeroSection from '@/app/sections/HeroSection'
 import TechnologiesAndExperienceSection from '@/app/sections/TechnologiesAndExperienceSection'
 import ProjectsSection from '@/app/sections/ProjectsSection'
-import ToggleSwitch from './ToggleSwitch'
 import ResumeAndStudiesSection from "@/app/sections/ResumeAndStudiesSection";
+import ContactButton from "@/app/components/ContactButton";
 
 export default function Portfolio() {
   return (
@@ -16,7 +16,8 @@ export default function Portfolio() {
       </main>
       
       {/* Toggle Switch in bottom right corner */}
-      <ToggleSwitch />
+      <ContactButton />
+      {/*<ToggleSwitch />*/}
     </div>
   )
 }

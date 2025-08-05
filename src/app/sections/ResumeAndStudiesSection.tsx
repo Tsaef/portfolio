@@ -10,7 +10,7 @@ export default function ResumeAndStudiesSection() {
           Présentation
         </h2>
         {personal.description.map((item, index) => (
-          <p key={index} className="text-lg text-gray-700 leading-relaxed mb-3">
+          <p key={index} className="text-lg text-justify text-gray-700 leading-relaxed mb-3">
             {item.paragraph}
           </p>
         ))}

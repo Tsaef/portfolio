@@ -15,7 +15,7 @@ export default function ToggleSwitch() {
     <FixedContainer
       horizontalPosition="right"
       verticalPosition="bottom"
-      spacing={4}
+      spacing={6}
     >
       <div className="bg-gray-800 p-3 sm:p-4 h-16 w-16 sm:h-18 sm:w-18 flex items-center justify-center rounded-full shadow-lg">
         <button

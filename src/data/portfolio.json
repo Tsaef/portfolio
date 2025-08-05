@@ -154,5 +154,31 @@
         }
       ]
     }
+  ],
+  "contact": [
+    {
+      "type": "email",
+      "label": "Email",
+      "subtitle": "baptiste.renouf@gmail.com",
+      "url": "mailto:your.email@example.com"
+    },
+    {
+      "type": "phone",
+      "label": "Téléphone",
+      "subtitle": "+33 6 12 34 56 78",
+      "url": "tel:+33612345678"
+    },
+    {
+      "type": "github",
+      "label": "GitHub",
+      "subtitle": "Regarder mon GitHub",
+      "url": "https://github.com/Tsaef"
+    },
+    {
+      "type": "linkedin",
+      "label": "LinkedIn",
+      "subtitle": "Connectez-vous avec moi",
+      "url": "https://www.linkedin.com/in/baptiste-renouf-411047197/"
+    }
   ]
 }
