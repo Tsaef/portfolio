@@ -25,7 +25,7 @@ export default function ProjectsSection() {
   return (
     <section className="projects-section">
       <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-        Featured Projects
+        Projets
       </h2>
       <div className="flex flex-wrap gap-8 items-stretch justify-center">
         {projects.map((project, index) => (
@@ -40,16 +40,6 @@ export default function ProjectsSection() {
                 alt={`${project.title} screenshot`}
                 fill
                 className="object-cover"
-                onError={(e) => {
-                  // Fallback for missing images
-                  const target = e.target as HTMLImageElement
-                  target.style.display = 'none'
-                  target.parentElement!.innerHTML = `
-                    <div class="flex items-center justify-center h-full bg-gray-100">
-                      <span class="text-gray-500 text-sm">Screenshot coming soon</span>
-                    </div>
-                  `
-                }}
               />
               {/* Click indicator overlay */}
               <div className="absolute inset-0 hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">

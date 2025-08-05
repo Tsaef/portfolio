@@ -69,20 +69,20 @@
       "githubUrl": "https://github.com/Tsaef/outside-dashboard"
     },
     {
-      "title": "Task Management App",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
-      "technologies": ["Vue.js", "TypeScript", "Firebase", "Vuetify"],
-      "screenshot": "/assets/project-screenshots/taskmanager.jpg",
+      "title": "Bingo creator",
+      "description": "L'application permet de générer des grilles de bingo personnalisées, de sauvegarder leur état et de les partager. Chaque grille est composée de cellules, et chaque cellule peut contenir un texte personnalisé. L'utilisateur peut créer une nouvelle grille, la remplir, puis la partager ou la rejouer.",
+      "technologies": ["NextJS", "TypeScript", "Express", "PostgreSQL", "Docker"],
+      "screenshot": "/assets/project-screenshots/bingo.png",
       "demoUrl": "",
-      "githubUrl": "https://github.com/johndeveloper/task-manager"
+      "githubUrl": "https://github.com/Tsaef/bingo"
     },
     {
-      "title": "Weather Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A responsive weather dashboard that displays current conditions and forecasts for multiple cities with beautiful data visualizations.",
-      "technologies": ["Angular", "TypeScript", "Chart.js", "Weather API"],
-      "screenshot": "/assets/project-screenshots/weather.jpg",
+      "title": "Groover",
+      "description": "Un site de visualisation simple et facile où on peut enregistrer ses albums et vinyls ainsi que créer des playlists. L'application permet de gérer ses albums, de les classer par artiste et de créer des playlists.",
+      "technologies": ["ReactJS", "TypeScript", "framer.motion", "Docker"],
+      "screenshot": "/assets/project-screenshots/groover.png",
       "demoUrl": "",
-      "githubUrl": "https://github.com/johndeveloper/weather-dashboard"
+      "githubUrl": "https://github.com/Tsaef/groover"
     }
   ],
   "technologies": [
