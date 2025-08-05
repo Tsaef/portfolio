@@ -8,8 +8,6 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,17 +33,34 @@ body {
 }
 
 .hero-section {
-  @apply py-20;
+  @apply py-16;
 }
 
-.studies-section {
-  @apply py-12;
+.section {
+  @apply py-8 flex flex-row gap-8;
 }
 
 .experience-section {
   @apply py-12;
 }
 
+.projects-section {
+  @apply py-12 px-32;
+}
+
 .technologies-section {
   @apply py-12;
+}
+
+.custom-card {
+  @apply bg-white rounded-lg shadow-md p-6 hover:scale-105 transition-transform duration-300;
+}
+
+.profile-picture {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ccdc39;
+  filter: drop-shadow(0 0 8px #ff5722);
 }
