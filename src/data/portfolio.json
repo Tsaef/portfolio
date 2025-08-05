@@ -1,60 +1,158 @@
 {
   "personal": {
-    "name": "John Developer",
+    "name": "John Doeveloper",
     "title": "Full Stack Developer",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    "profilePicture": "/assets/project-screenshots/outside.png",
+    "description": [
+      {
+        "paragraph": "Développeur passionné, je combine une solide expérience en développement front et back avec une approche agile et une forte autonomie."
+      },
+      {
+        "paragraph": "Je conçois des applications web performantes, en mettant l’accent sur la rigueur et la qualité du code, l’expérience utilisateur et la collaboration en équipe."
+      },
+      {
+        "paragraph": "Curieux, passionné de sport et technologies. Je recherche un poste stimulant en développement."
+      }
+    ]
   },
   "studies": [
     {
-      "degree": "Master's in Computer Science",
-      "institution": "Lorem University",
-      "period": "2020 - 2022",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Specialized in software engineering and web development."
+      "degree": "Titre d'expert en technologie de l'information",
+      "institution": "Epitech (Nantes)",
+      "period": "2019-2024",
+      "description": "Apprentissage du C et du C++, développement d'applications web en React et mobiles en Flutter, gestion de projets agiles. Formation axée sur la pratique et l'innovation avec une maitrise de l'anglais professionnel."
     },
     {
-      "degree": "Bachelor's in Software Engineering",
-      "institution": "Ipsum Institute of Technology",
-      "period": "2016 - 2020",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Focus on algorithms, data structures, and programming fundamentals."
+      "degree": "Baccalauréat Scientifique",
+      "institution": "Lycée Vieljeux, La Rochelle",
+      "period": "2017-2019",
+      "description": "Spécialisation en informatique et sciences du numérique"
     }
   ],
   "experiences": [
     {
-      "position": "Senior Full Stack Developer",
-      "company": "Lorem Tech Solutions",
-      "period": "2022 - Present",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Led development of multiple web applications using React, Node.js, and TypeScript. Collaborated with cross-functional teams to deliver high-quality software solutions."
+      "position": "Full Stack Developer",
+      "company": "Steamulo",
+      "period": "2024 - Present",
+      "description": [
+        "Développement de nouvelles fonctionnalités et TMA sur une application de gestion de tours touristiques. Déploiements en recette avec kube et production avec awx.",
+        "Refonte front et back d'une application permettant de faire transiter des documents entre entités.",
+        "Utilisation de React.js, Java Spring, PostgreSQL et Docker."
+      ]
+    },
+    {
+      "position": "Full Stack Developer",
+      "company": "La centrale Île de Ré",
+      "period": "2023 - 2024",
+      "description": [
+        "Alternance en tant que développeur full stack. Développement d'une application de gestion locative pour des locations de maisons.",
+        "Utilisation de React.js, PHP Yii2 et MySQL."
+      ]
     },
     {
       "position": "Frontend Developer",
-      "company": "Ipsum Digital Agency",
-      "period": "2021 - 2022",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Developed responsive web applications using Vue.js and Angular. Implemented modern UI/UX designs and optimized application performance."
+      "company": "Chicago Pneumatic Nantes",
+      "period": "2022",
+      "description": [
+        "Développement d'une application interne de visualisation de chaine de production et des ses équipements. Benchmarking de solutions de visualisation de données.",
+        "Utilisation de VueJS (2), TypeScript, et Tailwindcss."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Dashboard Outside",
+      "description": "Dashboard servant de back-office pour l'application mobile Outside, permettant de manipuler les différentes ressources de l'application. Application complémentaire au projet de fin d'études.",
+      "technologies": ["VueJS", "TypeScript"],
+      "screenshot": "/assets/project-screenshots/outside.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/Tsaef/outside-dashboard"
     },
     {
-      "position": "Junior Developer",
-      "company": "Dolor Software Inc.",
-      "period": "2020 - 2021",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Worked on various projects using Java and JavaScript. Gained experience in full-stack development and agile methodologies."
+      "title": "Task Management App",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+      "technologies": ["Vue.js", "TypeScript", "Firebase", "Vuetify"],
+      "screenshot": "/assets/project-screenshots/taskmanager.jpg",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/johndeveloper/task-manager"
+    },
+    {
+      "title": "Weather Dashboard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. A responsive weather dashboard that displays current conditions and forecasts for multiple cities with beautiful data visualizations.",
+      "technologies": ["Angular", "TypeScript", "Chart.js", "Weather API"],
+      "screenshot": "/assets/project-screenshots/weather.jpg",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/johndeveloper/weather-dashboard"
     }
   ],
   "technologies": [
     {
       "category": "Frontend Frameworks",
-      "techs": ["React.js", "Vue.js", "Angular.js"]
+      "techs": [
+        {
+          "name": "React.js",
+          "icon": "/assets/technologies/react.png"
+        },
+        {
+          "name": "Vue.js",
+          "icon": "/assets/technologies/vue.png"
+        },
+        {
+          "name": "Angular",
+          "icon": "/assets/technologies/angular.png"
+        },
+        {
+          "name": "Next.js",
+          "icon": "/assets/technologies/next.png"
+        }
+      ]
+    },
+    {
+      "category": "Backend Frameworks",
+      "techs": [
+        {
+          "name": "Spring Framework",
+          "icon": "/assets/technologies/spring.png"
+        },
+        {
+          "name": "Node.js",
+          "icon": "/assets/technologies/node.png"
+        }
+      ]
     },
     {
       "category": "Languages",
-      "techs": ["TypeScript", "JavaScript", "Java"]
-    },
-    {
-      "category": "Backend",
-      "techs": ["Node.js", "Express.js"]
+      "techs": [
+        {
+          "name": "TypeScript",
+          "icon": "/assets/technologies/typescript.png"
+        },
+        {
+          "name": "JavaScript",
+          "icon": "/assets/technologies/javascript.png"
+        },
+        {
+          "name": "Java",
+          "icon": "/assets/technologies/java.png"
+        }
+      ]
     },
     {
       "category": "Other",
-      "techs": ["Spring Framework", "REST APIs", "Git"]
+      "techs": [
+        {
+          "name": "Git / Github / Gitlab",
+          "icon": "/assets/technologies/git.png"
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "/assets/technologies/postgresql.png"
+        },
+        {
+          "name": "Docker",
+          "icon": "/assets/technologies/docker.png"
+        }
+      ]
     }
   ]
 }
-

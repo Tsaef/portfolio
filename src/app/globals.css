@@ -45,7 +45,7 @@ body {
 }
 
 .projects-section {
-  @apply py-12 px-32;
+  @apply py-12;
 }
 
 .technologies-section {

@@ -7,7 +7,7 @@ export default function ResumeAndStudiesSection() {
     <section className="section">
       <div className="w-1/2 px-32">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Resume
+          Présentation
         </h2>
         {personal.description.map((item, index) => (
           <p key={index} className="text-lg text-gray-700 leading-relaxed mb-3">
@@ -17,7 +17,7 @@ export default function ResumeAndStudiesSection() {
       </div>
       <div className="w-1/2 px-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Education
+          Formation
         </h2>
         <div className="space-y-6">
           {studies.map((study, index) => (

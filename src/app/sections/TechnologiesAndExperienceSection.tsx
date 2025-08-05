@@ -8,7 +8,7 @@ export default function TechnologiesAndExperienceSection() {
     <section className="section">
       <div className="w-1/2 px-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Technologies I Master
+          Technologies
         </h2>
         <div className="flex flex-wrap gap-6 justify-center items-center">
           {technologies.map((category, index) => (
@@ -33,7 +33,7 @@ export default function TechnologiesAndExperienceSection() {
       </div>
       <div className="w-1/2 px-16">
         <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-          Professional Experience
+          Expérience Professionnelle
         </h2>
         <div className="space-y-6">
           {experiences.map((exp, index) => (
@@ -49,9 +49,13 @@ export default function TechnologiesAndExperienceSection() {
               <h4 className="text-lg text-gray-700 mb-3">
                 {exp.company}
               </h4>
-              <p className="text-gray-600">
-                {exp.description}
-              </p>
+              <div className="flex flex-col gap-2">
+                {exp.description.map((desc, index) => (
+                  <p key={index} className="text-gray-600">
+                    • {desc}
+                  </p>
+                ))}
+              </div>
             </div>
           ))}
         </div>
