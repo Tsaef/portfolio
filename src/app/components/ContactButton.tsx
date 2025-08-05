@@ -84,7 +84,7 @@ export default function ContactButton({}: ContactButtonProps) {
       <div className="fixed flex bottom-6 right-6 z-50">
         <div
           onClick={toggleContactPanel}
-          className={`flex bg-gray-800 p-3 sm:p-4 h-16 w-16 sm:h-auto sm:w-auto items-center gap-2 rounded-full shadow-lg hover:bg-gray-700 transition-colors transition-transform duration-100 hover:cursor-pointer active:scale-95 active:bg-gray-900 ${
+          className={`flex bg-gray-800 p-3 sm:p-4 h-16 w-16 sm:h-auto sm:w-auto items-center justify-center gap-2 rounded-full shadow-lg hover:bg-gray-700 transition-colors transition-transform duration-100 hover:cursor-pointer active:scale-95 active:bg-gray-900 ${
             !isContactPanelOpen ? 'animate-shake' : ''
           }`}
         >
