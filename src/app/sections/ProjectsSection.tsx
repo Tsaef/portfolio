@@ -1,7 +1,8 @@
 'use client'
 
 import Image from 'next/image'
-import { useState } from 'react'
+import {ReactNode, useState} from 'react'
+import { EyeIcon, CodeBracketIcon } from '@heroicons/react/24/outline'
 import portfolioData from '@/data/portfolio.json'
 import Button from '../components/Button'
 import ImageModal from '../components/ImageModal'
@@ -84,6 +85,7 @@ export default function ProjectsSection() {
                     rel="noopener noreferrer"
                     variant="primary"
                     className="flex-1 text-center"
+                    icon={<EyeIcon className="w-4 h-4" /> as ReactNode}
                   >
                     Live Demo
                   </Button>
@@ -95,8 +97,9 @@ export default function ProjectsSection() {
                     rel="noopener noreferrer"
                     variant="secondary"
                     className="flex-1 text-center"
+                    icon={<CodeBracketIcon className="w-4 h-4" /> as ReactNode}
                   >
-                    View Code
+                    Voir le code
                   </Button>
                 )}
               </div>

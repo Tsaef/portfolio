@@ -16,7 +16,7 @@ export default function FixedContainer({
   children
 }: FixedContainerProps) {
 
-  const positionClasses = `fixed ${verticalPosition}-${spacing} ${horizontalPosition}-${spacing} z-100`
+  const positionClasses = `fixed bg-red ${verticalPosition}-${spacing} ${horizontalPosition}-${spacing} z-100`
 
   return (
     <div className={positionClasses}>

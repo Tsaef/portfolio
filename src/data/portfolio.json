@@ -1,7 +1,7 @@
 {
   "personal": {
     "name": "John Doeveloper",
-    "title": "Full Stack Developer",
+    "title": "Developpeur FullStack",
     "profilePicture": "/assets/project-screenshots/outside.png",
     "description": [
       {
@@ -19,19 +19,19 @@
     {
       "degree": "Titre d'expert en technologie de l'information",
       "institution": "Epitech (Nantes)",
-      "period": "2019-2024",
+      "period": "2019 - 2024",
       "description": "Apprentissage du C et du C++, développement d'applications web en React et mobiles en Flutter, gestion de projets agiles. Formation axée sur la pratique et l'innovation avec une maitrise de l'anglais professionnel."
     },
     {
       "degree": "Baccalauréat Scientifique",
       "institution": "Lycée Vieljeux, La Rochelle",
-      "period": "2017-2019",
+      "period": "2017 - 2019",
       "description": "Spécialisation en informatique et sciences du numérique"
     }
   ],
   "experiences": [
     {
-      "position": "Full Stack Developer",
+      "position": "Developpeur FullStack",
       "company": "Steamulo",
       "period": "2024 - Present",
       "description": [
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "position": "Full Stack Developer",
+      "position": "Developpeur FullStack",
       "company": "La centrale Île de Ré",
       "period": "2023 - 2024",
       "description": [
@@ -50,7 +50,7 @@
       ]
     },
     {
-      "position": "Frontend Developer",
+      "position": "Developpeur Frontend",
       "company": "Chicago Pneumatic Nantes",
       "period": "2022",
       "description": [
