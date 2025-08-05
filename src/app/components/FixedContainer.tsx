@@ -6,7 +6,7 @@ interface FixedContainerProps {
   verticalPosition?: 'top' | 'bottom'
   horizontalPosition?: 'left' | 'right'
   spacing?: number
-    children?: ReactNode
+  children?: ReactNode
 }
 
 export default function FixedContainer({
@@ -16,10 +16,12 @@ export default function FixedContainer({
   children
 }: FixedContainerProps) {
 
-  const positionClasses = `fixed bg-red ${verticalPosition}-${spacing} ${horizontalPosition}-${spacing} z-100`
+  // Build position classes more safely
+  const verticalClass = verticalPosition === 'top' ? `top-${spacing}` : `bottom-${spacing}`
+  const horizontalClass = horizontalPosition === 'left' ? `left-${spacing}` : `right-${spacing}`
 
   return (
-    <div className={positionClasses}>
+    <div className={`fixed ${verticalClass} ${horizontalClass} z-50`}>
       {children}
     </div>
   )

@@ -12,13 +12,17 @@ export default function ToggleSwitch() {
   }
 
   return (
-    <FixedContainer>
-      <div className="bg-gray-200 p-4 h-18 w-18 flex items-center justify-center rounded-full shadow-lg">
+    <FixedContainer
+      horizontalPosition="right"
+      verticalPosition="bottom"
+      spacing={4}
+    >
+      <div className="bg-gray-800 p-3 sm:p-4 h-16 w-16 sm:h-18 sm:w-18 flex items-center justify-center rounded-full shadow-lg">
         <button
           onClick={handleToggle}
           className={`
           relative inline-flex h-6 w-11 items-center rounded-full transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2
-          ${isToggled ? 'bg-blue-600' : 'bg-gray-100'}
+          ${isToggled ? 'bg-blue-600' : 'bg-gray-300'}
         `}
         >
         <span
