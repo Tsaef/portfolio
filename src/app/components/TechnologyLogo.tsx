@@ -20,6 +20,8 @@ export default function TechnologyLogo({
         <Image
           src={imgSrc}
           alt={techName || 'Technology Logo'}
+          width={128}
+          height={128}
           className={`h-16 w-16 transition-transform duration-300 ease-in-out hover:scale-110`}
         />
       </div>
