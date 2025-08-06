@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Custom font import */
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('../assets/fonts/ClashDisplay-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -75,4 +84,34 @@ body {
 .animate-shake {
   animation: shake 2s ease-in-out infinite;
   animation-delay: 0s;
+}
+
+/* ClashDisplay font utility classes */
+.font-clash {
+  font-family: 'ClashDisplay', Arial, Helvetica, sans-serif;
+}
+
+.font-clash-light {
+  font-family: 'ClashDisplay', Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.font-clash-regular {
+  font-family: 'ClashDisplay', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.font-clash-medium {
+  font-family: 'ClashDisplay', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.font-clash-semibold {
+  font-family: 'ClashDisplay', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.font-clash-bold {
+  font-family: 'ClashDisplay', Arial, Helvetica, sans-serif;
+  font-weight: 700;
 }

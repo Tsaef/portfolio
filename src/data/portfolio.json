@@ -180,5 +180,57 @@
       "subtitle": "Connectez-vous avec moi",
       "url": "https://www.linkedin.com/in/baptiste-renouf-411047197/"
     }
+  ],
+  "colors": [
+    {
+      "primary": "#801515",
+      "secondary": "#FFAAAA",
+      "dark": "#4D0000"
+    },
+    {
+      "primary": "#47332A",
+      "secondary": "#CABAAB",
+      "dark": "#161110"
+    },
+    {
+      "primary": "#494945",
+      "secondary": "#A5AE7A",
+      "dark": "#31312F"
+    },
+    {
+      "primary": "#37373d",
+      "secondary": "#818AA8",
+      "dark": "#212122"
+    },
+    {
+      "primary": "#3A3A2A",
+      "secondary": "#B5B56C",
+      "dark": "#26261c"
+    },
+    {
+      "primary": "#4e2d54",
+      "secondary": "#9F84A3",
+      "dark": "#221324"
+    },
+    {
+      "primary": "#BF3C7A",
+      "secondary": "#ECC6D8",
+      "dark": "#4f1631"
+    },
+    {
+      "primary": "#346D92",
+      "secondary": "#B5C9D6",
+      "dark": "#193749"
+    },
+    {
+      "primary": "#57820E",
+      "secondary": "#CDF098",
+      "dark": "#2b3f08"
+    },
+    {
+      "primary": "#BC6D0D",
+      "secondary": "#FFD6A2",
+      "dark": "#633c0e"
+    }
   ]
 }
