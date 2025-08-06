@@ -86,6 +86,24 @@ body {
   animation-delay: 0s;
 }
 
+/* Custom slow spin animation */
+@keyframes slow-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-slow-spin {
+  animation: slow-spin 2s linear infinite;
+}
+
+.animate-slower-spin {
+  animation: slow-spin 3s linear infinite;
+}
+
+.animate-slowest-spin {
+  animation: slow-spin 5s linear infinite;
+}
+
 /* ClashDisplay font utility classes */
 .font-clash {
   font-family: 'ClashDisplay', Arial, Helvetica, sans-serif;
