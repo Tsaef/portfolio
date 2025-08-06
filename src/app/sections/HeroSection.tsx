@@ -1,4 +1,5 @@
 import portfolioData from '@/data/portfolio.json'
+import Image from "next/image";
 
 export default function HeroSection() {
   const { personal } = portfolioData
@@ -6,7 +7,7 @@ export default function HeroSection() {
   return (
     <section className="hero-section">
       <div className="text-center space-y-6 flex flex-col items-center justify-center">
-        <img className="profile-picture" src={personal.profilePicture} alt={personal.name} />
+        <Image className="profile-picture hover:animate-bounce hover:cursor-pointer" src={personal.profilePicture} alt={personal.name} />
         <h1 className="text-5xl font-bold text-gray-900 mb-4">
           {personal.name}
         </h1>

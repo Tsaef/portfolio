@@ -5,9 +5,7 @@ import {XMarkIcon} from "@heroicons/react/16/solid";
 import {PhoneIcon, EnvelopeIcon} from "@heroicons/react/24/solid";
 import portfolioData from '@/data/portfolio.json'
 
-interface ContactButtonProps {}
-
-export default function ContactButton({}: ContactButtonProps) {
+export default function ContactButton() {
   const [isContactPanelOpen, setIsContactPanelOpen] = useState(false);
   const { contact } = portfolioData
 
