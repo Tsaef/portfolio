@@ -51,7 +51,6 @@ export default function TechnologiesAndExperienceSection() {
                     <TechnologyLogo
                       imgSrc={tech.icon}
                       techName={tech.name}
-                      animationClass={tech.animation}
                     />
                   </div>
                 ))}
