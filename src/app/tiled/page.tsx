@@ -1,7 +1,9 @@
 import portfolioData from '@/data/portfolio.json'
-import Image from "next/image";
+import Link from "next/link";
+import { ChevronLeftIcon } from '@heroicons/react/24/outline';
+import { makeBoldWords } from '@/app/utils/stringUtils';
 
-export default function TileDPage() {
+export default function TiledPage() {
 
   const { colors, personal } = portfolioData
 
@@ -11,8 +13,15 @@ export default function TileDPage() {
   return (
     <div style={{ backgroundColor: color.secondary }} className="h-screen flex flex-col items-center justify-center p-8">
       <div style={{ backgroundColor: color.primary }} className="h-5/6 w-5/6 rounded-3xl p-5 flex flex-col">
-        <div style={{ backgroundColor: color.dark, color: color.secondary }} className="flex items-center justify-center rounded-3xl h-24 text-3xl font-clash-regular">
-          {personal.name}
+        <div style={{ backgroundColor: color.dark, color: color.secondary }} className="flex items-center justify-between rounded-3xl h-24 text-3xl font-clash-regular px-6">
+          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <ChevronLeftIcon className="w-4 h-4" />
+            <span className="text-xl">Retour</span>
+          </Link>
+          <div className="flex-1 text-center">
+            {personal.name}
+          </div>
+          <div className="w-20"></div>
         </div>
         <div className="flex flex-row h-full w-full mt-5 overflow-hidden gap-5">
           <div className="w-2/3 h-full flex flex-col gap-5">
@@ -26,10 +35,24 @@ export default function TileDPage() {
                     </g>
                   </svg>
                 </div>
-                <p className="text-4xl font-clash-regular">{personal.shortDescription}</p>
+                <p className="text-5xl font-clash-regular leading-relaxed">
+                  {makeBoldWords(
+                    personal.shortDescription,
+                    ["FullStack", "React.js", "Java Spring"]
+                  )}
+                </p>
               </div>
-              <div style={{ backgroundColor: color.dark }} className="rounded-3xl text-4xl font-clash-bold w-2/6 h-full flex relative overflow-hidden">
-                <Image fill className="object-cover" src="" alt={personal.name} /> {/*src="/assets/profile.png"*/}
+              <div style={{ backgroundColor: color.dark }} className="rounded-3xl text-4xl font-clash-bold w-2/6 h-full flex relative overflow-hidden items-center justify-center">
+                <div className="flex h-full align-middle">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="w-full h-full"
+                    style={{ color: color.secondary }}
+                    fill="currentColor"
+                  >
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                  </svg>
+                </div>
               </div>
             </div>
             <div className="rounded-3xl w-full h-2/5 flex flex-row gap-5">
