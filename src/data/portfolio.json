@@ -2,7 +2,7 @@
   "personal": {
     "name": "Baptiste Renouf",
     "title": "Developpeur FullStack",
-    "profilePicture": "/assets/profile.png",
+    "profilePicture": "/assets/profile.webp",
     "shortDescription": "Développeur FullStack passionné, spécialisé en React.js et Java Spring",
     "description": [
       {
@@ -161,7 +161,7 @@
       "type": "email",
       "label": "Email",
       "subtitle": "baptiste.renouf@gmail.com",
-      "url": "mailto:your.email@example.com"
+      "url": "mailto:baptiste.renouf@gmail.com"
     },
     {
       "type": "phone",
@@ -180,6 +180,12 @@
       "label": "LinkedIn",
       "subtitle": "Connectez-vous avec moi",
       "url": "https://www.linkedin.com/in/baptiste-renouf-411047197/"
+    },
+    {
+      "type": "website",
+      "label": "tsaef.fr",
+      "subtitle": "Voir mon site",
+      "url": "https://tsaef.fr"
     }
   ],
   "colors": [

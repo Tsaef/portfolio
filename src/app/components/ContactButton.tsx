@@ -2,7 +2,7 @@
 
 import {useState} from "react";
 import {XMarkIcon} from "@heroicons/react/16/solid";
-import {PhoneIcon, EnvelopeIcon} from "@heroicons/react/24/solid";
+import {PhoneIcon, EnvelopeIcon, GlobeAltIcon} from "@heroicons/react/24/solid";
 import portfolioData from '@/data/portfolio.json'
 
 export default function ContactButton() {
@@ -19,6 +19,8 @@ export default function ContactButton() {
         return <EnvelopeIcon className="w-4 h-4 text-gray-700" />
       case 'phone':
         return <PhoneIcon className="w-4 h-4 text-gray-700" />
+      case 'website':
+        return <GlobeAltIcon className="w-4 h-4 text-gray-700" />
       case 'linkedin':
         return (
           <svg className="w-4 h-4 text-gray-700" fill="currentColor" viewBox="0 0 24 24">
