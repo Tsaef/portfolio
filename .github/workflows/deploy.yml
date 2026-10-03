@@ -1,0 +1,47 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency: deploy
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - uses: actions/upload-artifact@v7
+        with:
+          name: site
+          path: out/
+
+  # L'environnement "production" exige une validation manuelle avant ce job.
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://portfolio.tsaef.fr
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: out/
+      - name: Configure SSH
+        env:
+          SSH_KEY: ${{ secrets.SSH_KEY }}
+        run: |
+          install -d -m 700 ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          echo "tsaef.fr ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFV9a+JbrZi6tKjXobVABebJe9qyNymiQZArX/mRGOmU" > ~/.ssh/known_hosts
+      # La cle est bridee cote serveur (deploy-gate.sh) : rsync dans ~/stack/sites/portfolio seulement.
+      - run: rsync -az --delete out/ ubuntu@tsaef.fr:
