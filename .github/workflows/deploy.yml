@@ -44,4 +44,4 @@ jobs:
           chmod 600 ~/.ssh/id_ed25519
           echo "tsaef.fr ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFV9a+JbrZi6tKjXobVABebJe9qyNymiQZArX/mRGOmU" > ~/.ssh/known_hosts
       # La cle est bridee cote serveur (deploy-gate.sh) : rsync dans ~/stack/sites/portfolio seulement.
-      - run: rsync -az --delete out/ ubuntu@tsaef.fr:
+      - run: rsync -az --delete out/ "ubuntu@tsaef.fr:"
